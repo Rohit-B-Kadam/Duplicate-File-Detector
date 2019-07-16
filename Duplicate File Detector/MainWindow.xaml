@@ -1,0 +1,96 @@
+﻿<Window x:Class="Duplicate_File_Detector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Duplicate_File_Detector"
+        mc:Ignorable="d"
+        Title="Duplicate File Detector" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- First Row-->
+        <StackPanel Grid.Row="0" 
+                    Margin="10,10,0,0"
+                    x:Name="MyStackPanel"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    >
+            <Label x:Name="Folder_Name"
+                Margin="0,0,0,0"
+                FontSize="20" Content="Folder Name:"/>
+            
+            <TextBox x:Name="txtFilePath"  
+                     Width="200" 
+                     Margin="15,5,0,5" 
+                     VerticalContentAlignment="Center"
+                     FontSize="18" 
+                     AllowDrop="True"
+                     Text="{Binding FolderName}" KeyUp="txtFilePath_KeyUp"
+                     />
+
+            <Button Name="btnSearch1"  
+                    BorderBrush="Black" 
+                    BorderThickness="1" 
+                    Width="100"
+                    Margin="50,5,0,5"
+                    FontSize="18"
+                    IsEnabled="{Binding EnableSearchBtn}"
+                    Click="StartSearch"
+                    Content="{Binding ButtonContent}"/>
+
+        </StackPanel>
+        
+        <!-- Line -->
+        <GridSplitter x:Name="gridSplitter" Grid.Row="1" Width="1000" Height="3"/>
+
+        <!-- Fourth Row -->
+        <Grid Grid.Row="2" >
+
+            <Label x:Name="label" 
+                   Content="Duplicate Files:" 
+                   HorizontalAlignment="Left" 
+                   Margin="10,10,0,0" 
+                   VerticalAlignment="Top"  
+                   Width="153" Height="43"
+                   FontSize="18"
+                   />
+
+
+            <ListView ItemsSource="{Binding ListOfDupFile}" Margin="10,50,10,10"  HorizontalContentAlignment="Stretch" 
+                      Height="Auto" Width="Auto">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Name="border" BorderBrush="LightBlue" BorderThickness="1" Padding="5" Margin="5">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label     FontSize="14"  Content="CheckSum: "></Label>
+                                    <TextBlock FontSize="14" Text="{Binding Path=CheckSum}" />
+                                </StackPanel>
+                                <ListView ItemsSource="{Binding Path=FilesPath}"  MouseDoubleClick="ListView_MouseDoubleClick"
+                                          HorizontalContentAlignment="Stretch" BorderBrush="LightCoral"
+                                          Height="Auto" 
+                                          >
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding }" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListView>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+    </Grid>
+</Window>

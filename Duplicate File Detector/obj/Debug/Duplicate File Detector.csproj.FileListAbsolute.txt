@@ -1,0 +1,15 @@
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\bin\Debug\Duplicate File Detector.exe.config
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\bin\Debug\Duplicate File Detector.exe
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\bin\Debug\Duplicate File Detector.pdb
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate File Detector.csprojAssemblyReference.cache
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\MainWindow.g.cs
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\App.g.cs
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate File Detector_MarkupCompile.cache
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate File Detector_MarkupCompile.lref
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\MainWindow.baml
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate File Detector.g.resources
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate_File_Detector.Properties.Resources.resources
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate File Detector.csproj.GenerateResource.cache
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate File Detector.csproj.CoreCompileInputs.cache
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate File Detector.exe
+H:\Technology\Dot Net\Project\Duplicate File Detector\Duplicate File Detector\obj\Debug\Duplicate File Detector.pdb
