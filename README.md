@@ -1,6 +1,6 @@
 # Duplicate File Detector
 
-This application find Duplicate files in specify Folder. All kind of file will be detector like .txt, .jpg, .exe.
+This application find Duplicate files present in specify Folder. All kind of file will be detector like .txt, .jpg, .exe.
 
 - __Framework:__ Dot Net.
 - __Front End:__ Windows Presentation Foundation (WPF)
